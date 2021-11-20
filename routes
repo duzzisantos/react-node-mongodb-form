@@ -1,0 +1,25 @@
+const express = require("express");
+const router = express.Router();
+const Forms = require("../models/models");
+
+//
+
+router.route("/create").post((req, res) =>{
+    const firstName = req.body.firstName;
+    const lastName = req.body.lastName;
+    const email = req.body.email;
+    const bday = req.body.bday;
+    const gender = req.body.gender;
+    const role = req.body.role;
+    const department = req.body.department;
+    const salary = req.body.salary;
+    const taxID = req.body.taxID;
+    const insuranceID = req.body.insuranceID;
+    const newForm = new Forms({
+        firstName,lastName,email,bday,gender,role,department,salary,taxID,insuranceID,newForm,
+    });
+    newForm.save();
+    res.send(newForm);
+})
+
+module.exports = router;
