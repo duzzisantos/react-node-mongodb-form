@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+body {
+  background-color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header {
+  font-size: 35px;
+  color: teal;
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+  text-decoration-color: rgba(0, 128, 128, 0.678);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  margin-left: 35.8%;
+  width: 380px;
+  background-color: rgba(0, 128, 128, 0.486);
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 128, 128, 0.5),
+    rgba(0, 128, 128, 0.678),
+    rgba(7, 163, 163, 0.507)
+  );
+
+height: 800px;
+box-shadow: 10px 20px 10px 10px rgba(63, 63, 63, 0.171);
+}
+label {
+  margin-left: 10px;
+  font-size: 18px;
+  display: block;
+  color: white;
+}
+
+input {
+  margin-left: 10px;
+  font-size: 18px;
+  width: 355px;
+  height: 30px;
+  display: block;
+  margin: 10px;
+  outline: none;
+  border: none;
+}
+
+button {
+  padding: 12px;
+  width: 120px;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  color: darkblue;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+button:hover{
+  background-color: darkblue;
+  box-shadow: 2px 2px 3px 4px whitesmoke;
+  color: white;
+}
