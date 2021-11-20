@@ -1,0 +1,16 @@
+const mongoose = require("mongoose");
+const  notesSchema = {
+    firstName: String,
+    lastName: String,
+    email: String,
+    bday: String,
+    gender: String,
+    role: String,
+    department: String,
+    salary: Number,
+    taxID: String,
+    insuranceID: String,
+}
+
+const Forms = mongoose.model("Forms", notesSchema); //This schema will reflect as forms in the Database (theyrouxCouncil.forms)
+module.exports = Forms;
